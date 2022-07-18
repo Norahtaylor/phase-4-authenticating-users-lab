@@ -11,7 +11,7 @@ function Home() {
       .then(setArticles);
   }, []);
 
-  return (
+  return 
     <main>
       {articles.map((article) => {
         const emojis = makeEmojiList(article.minutes_to_read);
@@ -28,7 +28,7 @@ function Home() {
         );
       })}
     </main>
-  );
+  
 }
 
 export default Home;
